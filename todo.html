@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> TO DO </title>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,700italic,300italic&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/f1a55c0348.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="organiser">
+
+            <div class="alltasks">
+                <div class='hot-keys'> All tasks
+                    <div class='hot-buttons'>
+                        <div class="search-button">
+                            <button class="search"><i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="add-task-button">
+                            <button class="task-adder"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="slider">
+                    <a class="arrow"></a>
+                    <a class="arrow"></a>
+                    <a class="arrow"></a>
+                </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="col_parts">
+                    <div class="activity">
+                        <button class="activity-button grey"><i class="fa fa-briefcase" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="activity">
+                        <button class="activity-button red"><i class="fa fa fa-futbol-o" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="activity is-active">
+                        <button class="activity-button yellow"><i class="fa fa-beer" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="activity">
+                        <button class="activity-button purple"><i class="fa fa-bed" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="activity">
+                        <button class="activity-button green"><i class="fa fa-laptop" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="settings">
+                        <button class="settings-button"><i class="fa fa-cogs" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col_main-content">
+                    <div class="task">
+                        <input type="checkbox" class="task-checkbox" id="task-id1">
+                        <div class="task-container">
+                            <label class="task-label" for="task-id1">
+                                <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+          </span>
+                                <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                            </label>
+
+                            <div class="task-content">
+                                <div class="colorline thin"></div>
+                                <div class="colorline fat red"></div>
+                                <div class="meta"><i class="fa fa-map-marker marker" aria-hidden="true"></i><span class="place"> At tesco</span>
+                                    <span class="date padding"> Tomorrow</span>
+                                    <button class="favourite"><i class="fa fa-star fa-1x" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="discription" contenteditable="true">Buy a new better toothbrush</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col_1_2">
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id2">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id2" style="background-color:none">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+          </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin red"></div>
+                                        <div class="colorline fat yellow"></div>
+                                        <div class="meta">
+                                            <span class="date"> Tomorrow</span>
+
+                                        </div>
+                                        Clean my room</div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id4">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id4">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+            </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin"></div>
+                                        <div class="colorline fat purple"></div>
+                                        <div class="meta">
+                                            <!-- <span class="place"></span> -->
+                                            <span class="date">18.September 2013</span>
+
+                                        </div>
+                                        do a homework non risus dapibus, vehicula neque in, dictum lacus</div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id6">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id6">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+              </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin"></div>
+                                        <div class="colorline fat brown"></div>
+                                        <div class="meta">
+                                            <!-- <span class="place"> At tesco</span> -->
+                                            <span class="date"> Yesterday</span>
+
+                                        </div>
+                                        Buy a milk. Donec non risus dapibus, vehicula neque in, dictum lacus. Duis ac nunc velit. </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col_1_2">
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id3">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id3">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+                </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin"></div>
+                                        <div class="colorline fat green"></div>
+                                        <div class="meta">
+                                            <!-- <span class="place"></span> -->
+                                            <span class="date"> 14.september 2013</span>
+
+                                        </div>
+                                        clean the house and mauris pretium purus id sapien consectetur</div>
+                                </div>
+                            </div>
+
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id5">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id5">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+                  </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin"></div>
+                                        <div class="colorline fat blue"></div>
+                                        <div class="meta">
+                                            <!-- <span class="place"></span> -->
+                                            <span class="date"> 5.october</span>
+
+                                        </div>
+                                        Gift to Petra</div>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-id7">
+                                <div class="task-container">
+                                    <label class="task-label" for="task-id7">
+                                        <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+                    </span>
+                                        <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                    </label>
+
+                                    <div class="task-content">
+                                        <div class="colorline thin"></div>
+                                        <div class="colorline fat beige"></div>
+                                        <div class="meta">
+                                            <!-- <span class="place"> At tesco</span> -->
+                                            <span class="date">Last week</span>
+
+                                        </div>
+                                        Call to Jakub Antalik</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-part">
+                    <div class="sub-content">
+                        <div class="fast-click">
+
+                            <input type="text" placeholder="Add new task" name="q">
+
+                            <div class="fast-keys">
+
+                                <button class="star"><i class="fa fa-star-o" aria-hidden="true"></i></button>
+                                <button class="calendar"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                                <button class="ball activated"><i class="fa fa-circle" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-content dark">
+
+                        <div class="fast-click">
+                            Select a category</div>
+                        <div class="category">
+                            <button class="fast-button red"><i class="fa fa-futbol-o" aria-hidden="true"></i></button>
+                            <button class="fast-button yellow"><i class="fa fa-beer" aria-hidden="true"></i></button>
+                            <button class="fast-button purple"><i class="fa fa-bed" aria-hidden="true"></i></button>
+                            <button class="fast-button green"><i class="fa fa-laptop" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-tab"><div class="sub-content"><i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    <input type="text" placeholder="" name="q"></div></div>
+                <div class="hidden-tab">
+                    <div class="greenline"></div>
+                    <div class="tab-content">
+                        <div class="task">
+                            <input type="checkbox" class="task-checkbox" id="task-id9">
+                            <div class="task-container">
+                                <label class="task-label" for="task-id9" style="background-color:#39484f;width:60px;">
+                                    <span class="fa fa fa-circle-thin task-circle" aria-hidden="true">
+          </span>
+                                    <span class="fa fa-check-circle task-circle-checked" aria-hidden="true"></span>
+                                </label>
+
+                                <div class="hidden-tab-content">
+                                    <div class="goal"><span contenteditable="true">Buy a new better toothbrush</span>
+                                        <button class="favorite"><i class="fa fa-star fa-1x" aria-hidden="true"></i></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choise">
+                            <button class="choise-button">
+                                <div class="duedate"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                <div class="hidden-tab-content">
+                                    <div class="sub-discription overflow">Set a due date
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="choise">
+                            <button class="choise-button">
+                                <div class="reminder"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+                                <div class="hidden-tab-content">
+                                    <div class="sub-discription overflow">Set a reminder
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="choise">
+                            <button class="choise-button">
+                                <div class="round"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                                <div class="hidden-tab-content">
+                                    <div class="sub-discription overflow white">Work
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="addnote">
+                            <button class="note"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></button>
+                            <button class="paperclip"><i class="fa fa-paperclip" aria-hidden="true"></i></button>
+                            <div class="addnote-content">
+                                <div class="sub-discription">
+                                    <textarea cols="30" rows="7" placeholder="Add note" class="text-field"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <Div class="calendar-tab choosen">
+                    <div class="month">
+                        <button class="month-select" style="padding-right:15px">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </button>September
+                        <button class="month-select" style="padding-left:10px">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="day">
+                        <table>
+                            <thead>
+                                <th class="day-enumeration">mon</th>
+                                <th class="day-enumeration">tue</th>
+                                <th class="day-enumeration">wed</th>
+                                <th class="day-enumeration">thu</th>
+                                <th class="day-enumeration">fri</th>
+                                <th class="day-enumeration">sun</th>
+                                <th class="day-enumeration">sat</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="lastmonth"><span class="date-select">24</span></td>
+                                    <td class="lastmonth"><span class="date-select">25</span></td>
+                                    <td class="lastmonth"><span class="date-select">26</span></td>
+                                    <td class="lastmonth"><span class="date-select">27</span></td>
+                                    <td class="lastmonth"><span class="date-select">28</span></td>
+                                    <td class=running-month><span class="date-select">1</span></td>
+                                    <td class=running-month><span class="date-select">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td class=running-month><span class="date-select">3</span></td>
+                                    <td class=running-month><span class="date-select">4</span></td>
+                                    <td class=running-month><span class="date-select">5</span></td>
+                                    <td class=running-month><span class="date-select">6</span></td>
+                                    <td class=running-month><span class="date-select">7</span></td>
+                                    <td class=running-month><span class="date-select">8</span></td>
+                                    <td class=running-month><span class="date-select">9</span></th</tr>
+                                        <tr>
+                                            <td class=running-month><span class="date-select">10</span></td>
+                                            <td class=running-month><span class="date-select">11</span></td>
+                                            <td class=running-month><span class="date-select">12</span></td>
+                                            <td class=running-month><span class="date-select">13</span></td>
+                                            <td class=running-month><span class="date-select">14</span></td>
+                                            <td class=running-month><span class="date-select">15</span></td>
+                                            <td class=running-month><span class="date-select current">16</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class=running-month><span class="date-select">17</span></td>
+                                            <td class=running-month><span class="date-select">18</span></td>
+                                            <td class=running-month><span class="date-select">19</span></td>
+                                            <td class=running-month><span class="date-select">20</span></td>
+                                            <td class=running-month><span class="date-select">21</span></td>
+                                            <td class=running-month><span class="date-select">22</span></td>
+                                            <td class=running-month><span class="date-select">23</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class=running-month><span class="date-select">24</span></td>
+                                            <td class=running-month><span class="date-select">25</span></td>
+                                            <td class=running-month><span class="date-select">26</span></td>
+                                            <td class=running-month><span class="date-select">27</span></td>
+                                            <td class=running-month><span class="date-select">28</span></td>
+                                            <td class="lastmonth"><span class="date-select">1</span></td>
+                                            <td class="lastmonth"><span class="date-select">2</span></td>
+                                        </tr>
+                                        <tbody>
+                        </table>
+                    </div>
+
+
+                </Div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
