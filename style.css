@@ -173,8 +173,9 @@ table tr .table-row-strong {
     /*background-color: yellow;*/
     width: 100%;
     overflow: hidden;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     position: relative;
+    display: flex;
 }
 .slider-item {
     white-space: normal;
@@ -239,7 +240,7 @@ table tr .table-row-strong {
 }
 .picture-slider {
     /*background-color:red;*/
-    width: 53px;
+    width: 60px;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -267,7 +268,7 @@ table tr .table-row-strong {
 .slider-titles {
     position: absolute;
     margin-left: 100px;
-    margin-top: -255px;
+    top: 60%;
 }
 
 .sub-container-header-block {
@@ -275,8 +276,6 @@ table tr .table-row-strong {
   height: 70px;
   margin: 40px 0px;
 }
-
-
 
 .col_1_2 {
   width: 50%;
@@ -555,4 +554,7 @@ text-align:center;
     width: 260px;
     color: red;
     border-radius: 4px;
+}
+.incorrect {
+    border:2px solid red;
 }

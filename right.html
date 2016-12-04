@@ -6,13 +6,15 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,700italic,300italic&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="scroll.js"></script> -->
 </head>
 
 <body>
-  <a href="#section" class="home-button">
+  <a href="#section-5" class="home-button">
       <img src="img/left_bullet.png" class="bullet-on-top">
   </a>
-  <div class='main-container' id="section">
+  <div class='main-container' id="section-5">
     <div class='main-navigation clear'>
       <div class="logo-container">
         <a href='#' class='logo-link'>
@@ -23,11 +25,11 @@
       <div class="menu-container clear">
         <div class="menu-pages-container" id="menu-page-container">
           <ul class="menu-navigation">
-            <li><a href="">Sākums</a></li>
-            <li><a href="#section-1" class="active">Pakalpojumi</a></li>
-            <li><a href="#section-2">Par mums</a></li>
-            <li><a href="#section-3">Klienti</a></li>
-            <li><a href="#section-4">kontakti</a></li>
+            <li><a href="#section-5" class="js-scroll">Sākums</a></li>
+            <li><a href="#section-1" class="js-scroll active">Pakalpojumi</a></li>
+            <li><a href="#section-2" class="js-scroll">Par mums</a></li>
+            <li><a href="#section-3" class="js-scroll">Klienti</a></li>
+            <li><a href="#section-4" class="js-scroll">kontakti</a></li>
           </ul>
         </div>
 
@@ -42,9 +44,24 @@
   </div>
 
   <div class="slider-container" id="slider">
-      <div class="slider-item"><img src="_Temp/image_slider.jpg" id="first-slider-image" /></div>
-      <div class="slider-item"><img src="_Temp/image2_slider.jpg" id="second-slider-image" /></div>
-      <div class="slider-item"><img src="_Temp/image3_slider.jpg" id="third-slider-image" /></div>
+      <div class="slider-item"><img src="_Temp/image_slider.jpg" id="first-slider-image" class="first-pic" />
+          <div class="slider-titles">
+            <div class="slider-title1">Mērnieciba</div>
+            <div class="slider-title2">Zemesgabalu robežu uzmērišana zemes un buvju reģīstracijai</div>
+          </div>
+      </div>
+      <div class="slider-item"><img src="_Temp/image2_slider.jpg" id="second-slider-image" class="second-pic"/>
+          <div class="slider-titles">
+            <div class="slider-title1">ĢEODEZIJA</div>
+            <div class="slider-title2">Zemesgabalu robežu uzmērišana zemes un buvju reģīstracijai</div>
+          </div>
+      </div>
+      <div class="slider-item"><img src="_Temp/image3_slider.jpg" id="third-slider-image" class="third-pic"/>
+          <div class="slider-titles">
+            <div class="slider-title1">ZEMES IERĪCĪBA</div>
+            <div class="slider-title2">Zemesgabalu robežu uzmērišana zemes un buvju reģīstracijai</div>
+          </div>
+      </div>
         <div class="slider-control">
           <button class="slider-arrow slider-left-arrow-container">
             <img src="img/left_bullet.png" />
@@ -53,10 +70,7 @@
             <img src="img/right_bullet.png" />
           </button>
         </div>
-    <div class="slider-titles">
-      <div class="slider-title1">Mērnieciba</div>
-      <div class="slider-title2">Zemesgabalu robežu uzmērišana zemes un buvju reģīstracijai</div>
-    </div>
+
     <span class="picture-slider">
       <!--       <button class="slider-page">*</button>
       <button class="slider-page">*</button>
@@ -298,25 +312,15 @@
         <h1 id="section-3"> Klienti </h1>
       </div>
       <div class="header">
-        <script>
-          var categories = [
-                	"Klienti",
-                	"Partneri",
-                    "Visi"
-                ];
+          <div class="filtr"><p></p></div>
 
-                document.write("<div><p>");
-                for (var i = 0; i < categories.length; i++){
-                    document.write("<button data-logoid='" + i + "'>" + categories[i] +"</button>");
-                }
-                document.write("</p></div>");
-        </script>
       </div>
       <div class="logobox">
-        <a href="#" class="logotype">
+          <div class="carousel-slide"></div>
+        <!-- <a href="#" class="logotype">
           <img src="img/LR.png" class="logotype-img">
-        </a>
-        <a href="#" class="logotype">
+        </a> -->
+        <!-- <a href="#" class="logotype">
           <img src="img/LVM.png" class="logotype-img">
         </a>
         <a href="#" class="logotype">
@@ -363,46 +367,11 @@
         </a>
         <a class="none">
           <img src="img/none.png" class="none-img">
-        </a>
-        <script>
-          var logos = [
-                	{
-                		logoid: 0,
-                		slug: "logotype-img1",
-                		image: 'img/LR.png'
-                	},
-                	{
-                		logoid: 1,
-                		slug: "logotype-img2",
-                		image: "img/LVM.png"
-                	},
-                	{
-                		logoid: 0,
-                		slug: "logotype-img3",
-                		image: "img/Gibson.png"
-                	},
-                    {
-                		logoid: 1,
-                		slug: "logotype-img4",
-                		image: "img/BB.png"
-                	},
-                    {
-                		logoid: 0,
-                		slug: "logotype-img5",
-                		image: "img/BSF.png"
-                	},
-                    ]
-                document.write("<div>");
-                for (var i = 0; i < logos.length; i++){
-                	var href = "cat-"+ logos[i].logoid + "/" + logos[i].slug;
-                	document.write(
-                		"<a href=" + href + " class='item'>" +
-                			"<img src='" + logos[i].image + "'>" +
-                			"<span>" + categories[logos[i].logoid] + "</span>" +
-                		"</a>");
-                }
-                document.write("</div>");
-        </script>
+        </a> -->
+
+
+
+
       </div>
     </div>
   </div>
@@ -452,5 +421,10 @@
   </div>
   </div>
   </div>
- <script type="text/javascript" src="right.js"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+  <!-- <script type="text/javascript" src="right.js"></script> -->
+  <script type="text/javascript" src="carousel.js"></script>
+  <script type="text/javascript" src="validation.js"></script>
+  <script type="text/javascript" src="lognav.js"></script>
+  <script type="text/javascript" src="filtr.js"></script>
  </body>
