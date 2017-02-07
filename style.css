@@ -510,6 +510,7 @@ table tr .table-row-strong {
 }
 .logobox {
     text-align:justify;
+    position: relative;
 }
 .right {
     float:right;
@@ -557,4 +558,26 @@ text-align:center;
 }
 .incorrect {
     border:2px solid red;
+}
+.logo-carousel_right-arrow, .logo-carousel_left-arrow {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    pointer-events: all;
+    background: red;
+}
+.logo-carousel_right-arrow {
+    right: 30px;
+}
+.carousel-slide {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel-block {
+    white-space: normal;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform .25s ease-in-out;
 }

@@ -1,7 +1,7 @@
 var categories = [
-          "clients",
-          "Partneri",
-          "Visi"
+          "Clients",
+          "Partners",
+          "All"
       ];
 
     //   document.write("<div><p>");
@@ -62,43 +62,43 @@ var categories = [
               {
                   logoid: 0,
                   slug: "logotype-img5",
-                  image: "BSF",
+                  image: "casamona",
                   id: 0
               },
               {
                   logoid: 1,
                   slug: "logotype-img5",
-                  image: "BSF",
-                  id: 0
-              },
-              {
-                  logoid: 0,
-                  slug: "logotype-img5",
-                  image: "BSF",
+                  image: "filterline",
                   id: 0
               },
               {
                   logoid: 0,
                   slug: "logotype-img5",
-                  image: "BSF",
+                  image: "vpp",
+                  id: 0
+              },
+              {
+                  logoid: 0,
+                  slug: "logotype-img5",
+                  image: "ventspils",
                   id: 0
               },
               {
                   logoid: 1,
                   slug: "logotype-img5",
-                  image: "BSF",
+                  image: "ventbunkers",
                   id: 1
               },
               {
                   logoid: 1,
                   slug: "logotype-img5",
-                  image: "BSF",
+                  image: "SFR",
                   id: 1
               },
               {
                   logoid: 1,
                   slug: "logotype-img5",
-                  image: "BSF",
+                  image: "LVC",
                   id: 1
               },
               ]
@@ -108,8 +108,8 @@ var categories = [
                   var href = "cat-"+ logos[i].logoid + "/" + logos[i].slug;
                   var logoElement = (
                       "<a href=" + href + " class='logotype logo-" +categories[logos[i].logoid]+"'>" +
-                          "<img src='img/" + logos[i].image + ".png'>" +
-                          // "<span>" + categories[logos[i].logoid] + "</span>" +
+                          "<img src='img/" + logos[i].image + ".png' class='logotype-img'>" +
+                        //   "<span>" + categories[logos[i].logoid] + "</span>" +
                       "</a>");
                   element.insertAdjacentHTML('beforeend', logoElement);
           }
